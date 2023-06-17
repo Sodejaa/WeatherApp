@@ -1,0 +1,118 @@
+* {
+  font-family: 'Fredericka the Great';
+  color: #fff;
+  text-transform: capitalize;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card {
+  background: #2f3f5fd0;
+  color: #fff;
+  padding: 1em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 200px;
+  margin: 1em;
+  font-size: 30px;
+  height: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.location,
+.temperature {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+.icon {
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 80px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbox input {
+  background: #7c7c7c8f;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 18px;
+  min-width: 100px;
+}
+
+.searchbox input::placeholder {
+  color: #ffffffd0;
+}
+
+.searchbox button {
+  background: #7c7c7c8f;
+  color: #ffffffd0;
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  height: 2.3em;
+  width: 2.3em;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.searchbox button:hover {
+  background: #ffffffd0;
+  color: #7c7c7c8f;
+}
+
+.card.visible {
+  transition: 0.3s ease-in-out;
+  height: 320px;
+}
+
+.card .temperature,
+.card .location,
+.card .icon,
+.card .description,
+.card .details {
+  visibility: hidden;
+}
+
+.card.visible .temperature,
+.card.visible .location,
+.card.visible .icon,
+.card.visible .description,
+.card.visible .details {
+  transition-delay: 0.35s;
+  visibility: visible;
+}
