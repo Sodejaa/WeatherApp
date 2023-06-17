@@ -3,9 +3,9 @@
 ## Description
 The Weather App is a web application that allows users to search for weather information based on a specific location. It retrieves real-time weather data from the OpenWeatherMap API and displays it in a user-friendly interface. Users can search for weather information by entering the name of a city, and the app will provide details such as temperature, humidity, wind speed, and a weather icon.
 
-![Weather App Opening Screenshot](opening.png)
+![Weather App Opening Screenshot](pictures/opening.png)
 
-![Weather App In Use Screenshot](inUse.png)
+![Weather App In Use Screenshot](pictures/inUse.png)
 
 ## Features
 - Search for weather information by city name
